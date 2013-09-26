@@ -1,0 +1,25 @@
+{
+  "sources": {
+    "apache2": {
+      "locked_version": "1.7.0"
+    },
+    "php": {
+      "locked_version": "1.2.4"
+    },
+    "mysql": {
+      "locked_version": "3.0.4"
+    },
+    "init": {
+      "path": "./site-cookbooks/init"
+    },
+    "build-essential": {
+      "locked_version": "1.4.2"
+    },
+    "xml": {
+      "locked_version": "1.1.2"
+    },
+    "openssl": {
+      "locked_version": "1.1.0"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+vagrantうごかして
+
+phpのバージョン考えたい
+
+設定環境~
+OS:Mac os X 10.6.8~
+
+**VirtualBoxのインストール
+https://www.virtualbox.org/wiki/Downloads
+
+**Vagrantのインストール
+http://downloads.vagrantup.com/
+
+**Shared folders
+デフォルトは/vagrant
+Todo:変えるには？
+
