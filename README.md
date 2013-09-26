@@ -1,0 +1,4 @@
+Vagrant
+=======
+
+Vagrant setting
