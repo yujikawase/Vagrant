@@ -22,6 +22,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :chef_solo do |chef|
     chef.run_list = [
       "apache2",
+      "mysql::server",
+      "yum::remi",
       "init"
     ]
 
