@@ -10,11 +10,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "CentOS6.4"
+  config.vm.box = "CentOS6.4_x86_64"
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
-  config.vm.box_url = "http://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.4-i386-v20130427.box"
+  config.vm.box_url = "http://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.4-x86_64-v20130731.box" #64bit
+  #config.vm.box_url = "http://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.4-i386-v20130427.box" #32bit
 
   config.omnibus.chef_version = :latest
   config.berkshelf.enabled = true
@@ -23,15 +24,20 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.run_list = [
       "apache2",
       "mysql::server",
+      "yum::epel",
       "yum::remi",
-      "init"
+      #"php5.3",
+      "php5.4",
+      #"php5.5",
+      "init",
+      "mysql_settings"
     ]
 
     chef.json = {
       mysql: {
-        server_root_password: "rootpass",
-        server_repl_password: "rootpass",
-        server_debian_password: "rootpass",
+        server_root_password: "mysqlpass",
+        server_repl_password: "mysqlpass",
+        server_debian_password: "mysqlpass",
         bind_address: "127.0.0.1"
       }
     }

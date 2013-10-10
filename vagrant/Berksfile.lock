@@ -3,26 +3,29 @@
     "apache2": {
       "locked_version": "1.7.0"
     },
-    "php": {
-      "locked_version": "1.2.4"
-    },
     "mysql": {
       "locked_version": "3.0.4"
     },
     "init": {
       "path": "./site-cookbooks/init"
     },
+    "php5.3": {
+      "path": "./site-cookbooks/php5.3"
+    },
+    "php5.4": {
+      "path": "./site-cookbooks/php5.4"
+    },
+    "mysql_settings": {
+      "path": "./site-cookbooks/mysql_settings"
+    },
     "yum": {
       "locked_version": "2.3.2"
     },
-    "build-essential": {
-      "locked_version": "1.4.2"
-    },
-    "xml": {
-      "locked_version": "1.1.2"
-    },
     "openssl": {
       "locked_version": "1.1.0"
+    },
+    "build-essential": {
+      "locked_version": "1.4.2"
     }
   }
 }

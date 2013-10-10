@@ -1,7 +1,9 @@
 site :opscode
 
 cookbook "apache2"
-cookbook "php", path: "site-cookbooks/php"
 cookbook "mysql"
 cookbook "init", path: "site-cookbooks/init"
+cookbook "php5.3", path: "site-cookbooks/php5.3"
+cookbook "php5.4", path: "site-cookbooks/php5.4"
+cookbook "mysql_settings", path: "site-cookbooks/mysql_settings"
 cookbook "yum"
