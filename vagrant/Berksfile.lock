@@ -15,6 +15,12 @@
     "php5.4": {
       "path": "./site-cookbooks/php5.4"
     },
+    "php5.5": {
+      "path": "./site-cookbooks/php5.5"
+    },
+    "yum_settings": {
+      "path": "./site-cookbooks/yum_settings"
+    },
     "mysql_settings": {
       "path": "./site-cookbooks/mysql_settings"
     },
