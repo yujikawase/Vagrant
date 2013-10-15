@@ -21,7 +21,7 @@ script "httpd_config_setting" do
 	user        "root"
 	code <<-EOH
 	cp -f /vagrant_settings/virtualhost.conf /etc/httpd/sites-available/virtualhost.conf
-	ln -s  /etc/httpd/sites-available/virtualhost.conf /etc/httpd/sites-enabled/
+	ln -s -f /etc/httpd/sites-available/virtualhost.conf /etc/httpd/sites-enabled/
 	EOH
 end
 
@@ -32,3 +32,8 @@ script "php_setting" do
 	cp -a /vagrant_settings/php.ini /etc/php.ini
 	EOH
 end
+
+
+ service "httpd" do
+   action [ :enable, :restart ]
+ end

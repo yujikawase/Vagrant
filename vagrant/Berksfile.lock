@@ -9,14 +9,8 @@
     "init": {
       "path": "./site-cookbooks/init"
     },
-    "php5.3": {
-      "path": "./site-cookbooks/php5.3"
-    },
-    "php5.4": {
-      "path": "./site-cookbooks/php5.4"
-    },
-    "php5.5": {
-      "path": "./site-cookbooks/php5.5"
+    "php": {
+      "path": "./site-cookbooks/php"
     },
     "yum_settings": {
       "path": "./site-cookbooks/yum_settings"

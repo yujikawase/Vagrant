@@ -15,4 +15,3 @@ script "create_database" do
 	mysql -u root -pmysqlpass < /vagrant_settings/project.sql
 	EOH
 end
-

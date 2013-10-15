@@ -25,17 +25,19 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       "apache2",
       "mysql::server",
       "yum::epel",
-      "yum::remi",
       "yum::ius",
+      "yum::remi",
       "yum_settings",
-      #"php5.3",
-      #"php5.4",
-      "php5.5",
-      "init",
-      "mysql_settings"
+      "php",
+      "mysql_settings",
+      "init"
     ]
 
     chef.json = {
+      php: {
+        version: "5.4",
+        packages: "php php-common php-mbstring php-xml php-devel php-process php-cli php-mysql",
+      },
       mysql: {
         server_root_password: "mysqlpass",
         server_repl_password: "mysqlpass",

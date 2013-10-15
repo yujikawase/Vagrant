@@ -1,2 +1,2 @@
 # Create Database for Project
-CREATE DATABASE project;
+CREATE DATABASE IF NOT EXISTS project;
